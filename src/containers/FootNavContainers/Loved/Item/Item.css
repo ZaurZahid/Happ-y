@@ -1,0 +1,56 @@
+ .Item {
+     border: 1px solid #d21414;
+     height: 100%;
+     width: 26%;
+     margin-right: 1rem;
+     margin-bottom: 1rem;
+     border-radius: 0.3rem;
+ }
+ 
+ .ContentItem {
+     text-align: center;
+     line-height: 1.7;
+     font-weight: 600;
+     font-family: 'Tomorrow';
+     color: rgb(203, 121, 210);
+     height: 5.2rem;
+     background: rgb(0, 27, 113);
+     width: 100%;
+     position: relative;
+ }
+ 
+ .Item:nth-of-type(1n+4) {
+     filter: blur(1px);
+     pointer-events: none
+ }
+ 
+ .ItemBlur:nth-of-type(1n) {
+     filter: blur(0);
+     pointer-events: auto
+ }
+ 
+ .ContentItem i {
+     color: hsl(0, 83%, 45%);
+     position: absolute;
+     font-weight: 900;
+     right: 0.3rem;
+     top: 0.2rem;
+     font-size: 1.2rem;
+ }
+ 
+ .Item:last-child {
+     margin-right: 0;
+ }
+ 
+ .ContentItem img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 0.3rem;
+ }
+ 
+ .ContentItem p {
+     font-size: 0.55rem;
+     margin: 0 0.5rem;
+     padding: 0.30rem 0;
+ }

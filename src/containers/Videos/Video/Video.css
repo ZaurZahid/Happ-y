@@ -1,0 +1,92 @@
+.mainBox {
+    max-width: 100%;
+    margin-bottom: 22px;
+    min-height: 210px;
+    border: 1px solid red;
+    width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 150px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mainBox img {
+    object-fit: cover;
+    width: 100%;
+    height: 84%;
+}
+
+.mainBox:hover #auth_img {
+    transform: scale(1.1)
+}
+
+.mainBox:hover .HeadingContent {
+    height: 30%
+}
+
+.HeadingContent {
+    box-sizing: border-box;
+    bottom: 0;
+    background: red;
+    text-shadow: 1px 1px #003ff5d4;
+    line-height: 1.2;
+    position: absolute;
+    color: rgb(255, 199, 199);
+    margin: 0;
+    width: 100%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeadingContent .VideoName {
+    height: 100%;
+    font-size: 0.99rem;
+    width: 75%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorPicture {
+    align-items: center;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.authorPicture img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 45%;
+    border: 2px solid #003df5ef;
+}
+
+.Watch {
+    transform: translateY(-110px);
+    z-index: -2;
+    display: none
+}
+
+.mainBox:hover .Watch {
+    transform: translateY(0px);
+    z-index: 5;
+    display: block;
+    font-family: 'Lemonada', cursive;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(68, 61, 61, 0.657);
+    color: white;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+}

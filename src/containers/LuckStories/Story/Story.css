@@ -1,0 +1,82 @@
+.Story {
+    margin: -11px;
+    height: 100%;
+    position: relative;
+}
+
+.Story i {
+    font-size: 27px;
+    position: absolute;
+    top: 11px;
+    right: 5.5%;
+    color: Red
+}
+
+.Story_Img {
+    min-height: 160px;
+    max-height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Story_Content {
+    padding: 2px 15px;
+    position: relative
+}
+
+.header {
+    line-height: 1.35;
+    font-size: 23px;
+    text-align: center;
+    margin: 0;
+    margin-top: 16px;
+    font-family: 'Lemonada', cursive;
+    color: rgb(255, 4, 4);
+    position: relative
+}
+
+.Content {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 600;
+    color: rgb(0, 0, 2);
+}
+
+.Story_Content i {
+    text-align: end;
+    z-index: 6;
+    position: absolute;
+    font-size: 44px;
+    color: red;
+    top: -28px;
+    display: block;
+    /* border: 1px solid red; */
+    right: 15px;
+}
+
+.Learnt {
+    border-radius: 10px;
+    border: 1px solid black;
+    background: black;
+    padding: 10px 20px
+}
+
+.Learnt h5 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    font-size: 20px;
+    color: #4dff00;
+    font-weight: 600
+}
+
+.Learnt p {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    color: #4dff00;
+    font-family: 'Lacquer', sans-serif;
+}

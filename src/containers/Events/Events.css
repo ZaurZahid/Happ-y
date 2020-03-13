@@ -1,0 +1,26 @@
+.Map {
+    margin: -11px;
+    height: 29rem;
+    width: 107%;
+}
+
+.infoMarker h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.infoMarker h3 i {
+    width: 6%;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.infoMarker h3:last-child {
+    align-items: baseline;
+}
+
+.infoMarker h3:last-child i {
+    margin-right: 0.85rem;
+    margin-left: 0.18rem;
+}

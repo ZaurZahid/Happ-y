@@ -1,0 +1,22 @@
+.FooterNavigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-flow: row;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #00ff2a;
+    border: 1px solid blue/* hehelik */
+}
+
+.Footer {
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 48px;
+}

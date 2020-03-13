@@ -1,0 +1,84 @@
+.mainBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    max-width: 100%;
+    font-size: 31px;
+    margin-bottom: 22px;
+    min-height: 210px;
+    border: 1px solid rgb(77, 77, 77);
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgba(150, 150, 150, 0.43);
+    animation: move 5s infinite ease-in-out;
+    background: linear-gradient(to right, transparent, #b3acae);
+}
+
+.mainBox img {
+    object-fit: cover;
+    width: 100%;
+    height: 84%;
+}
+
+.HeadingContent {
+    box-sizing: border-box;
+    bottom: 0;
+    border-top: 1px solid rgba(131, 131, 131, 0.904);
+    line-height: 1.2;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: move 5s infinite ease-in-out;
+    background: linear-gradient(to right, transparent, #928f90);
+}
+
+.VideoName {
+    width: 75%;
+    height: 66%;
+    margin: 0;
+    animation: move 5s infinite ease-in-out;
+    background: linear-gradient(to right, transparent, #b3acae);
+}
+
+.authorPicture {
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.authorPicture div {
+    border-radius: 50%;
+    height: 71%;
+    width: 2.8rem;
+    animation: move 5s infinite ease-in-out;
+    background: linear-gradient(to right, transparent, #b3acae);
+}
+
+@keyframes move {
+    0% {
+        background-color: grey;
+    }
+    25% {
+        background-color: rgb(206, 194, 194);
+    }
+    50% {
+        background-color: grey;
+    }
+    75% {
+        background-color: rgb(206, 194, 194);
+    }
+    100% {
+        background-color: grey;
+    }
+}

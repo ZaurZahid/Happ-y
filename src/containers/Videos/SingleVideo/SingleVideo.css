@@ -1,0 +1,152 @@
+.SingleVideo {
+    margin: -11px;
+    height: 100%;
+    position: relative;
+}
+
+.SingleVideo #mark {
+    font-size: 2rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 1.2rem;
+    color: red;
+}
+
+.SingleVideo_Img {
+    position: relative;
+    min-height: 160px;
+    width: 100%;
+}
+
+.SingleVideo_Img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.VideoContent,
+.AuthorContent,
+.SmallVideoContent {
+    /* border: 1px solid red; */
+    padding: 9px 18px;
+}
+
+.VideoContent h4,
+h6,
+span,
+.AuthorContent h4,
+h6,
+span {
+    margin: 0;
+    padding: 0
+}
+
+.AuthorName {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.VideoName {
+    font-size: 1rem;
+}
+
+.Date {
+    display: inline-block;
+    font-weight: 300;
+    color: #6d898a;
+    font-size: 0.8rem;
+}
+
+.VideoActions {
+    padding: 4px 0;
+    /* border: 1px solid rgb(4, 0, 255); */
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.VideoActions i {
+    font-size: 20px;
+    color: rgb(4, 0, 255)
+}
+
+.Content,
+.AuthContent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    text-align: justify;
+    font-weight: 600;
+    color: rgba(0, 0, 2, 0.85);
+    transition: 0.3s all ease-in-out
+}
+
+.AuthContent {
+    font-size: 0.72rem;
+}
+
+hr {
+    margin-bottom: 0;
+    border: 0.5px solid #737373;
+}
+
+.Auth {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem
+}
+
+.Author {
+    display: flex;
+    height: 2.2rem;
+}
+
+.AuthorHeading {
+    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: column
+}
+
+.AuthorImg {
+    height: 84%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: auto;
+    border: 2px solid #003df5ef;
+}
+
+.AuthorMajor {
+    font-weight: 300;
+    color: #6d898a;
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 2px;
+}
+
+.AuthorDesc {
+    margin-left: 2.25rem;
+}
+
+.Content span {
+    /* display: block; */
+    text-align: end;
+    color: red;
+    transition: 0.3s all ease-in-out
+}
+
+#play {
+    border: 2px solid blue;
+    bottom: -1.1rem;
+    right: 0.7rem;
+    position: absolute;
+    font-size: 2.9rem;
+    color: red;
+    background: white;
+    border-radius: 55%;
+    cursor: pointer
+}
+
+iframe {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    z-index: 150;
+}

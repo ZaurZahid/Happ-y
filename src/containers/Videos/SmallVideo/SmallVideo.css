@@ -1,0 +1,41 @@
+.SmallVideos {
+    display: flex;
+    height: 4rem;
+    box-sizing: border-box;
+    border: 1px solid #ff000069;
+    background: #c5b4b461;
+}
+
+.SmallVideos:not(:last-child) {
+    margin-bottom: 1.4rem;
+}
+
+.SmallVideoImg {
+    height: 100%;
+    object-fit: cover;
+    width: 35%;
+    box-sizing: border-box;
+    border-left: 5px solid red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-right: 5px solid red;
+}
+
+.SmallVideoName {
+    font-size: 0.72rem;
+    font-weight: 800;
+    font-family: 'Lemonada', cursive;
+    line-height: 1rem;
+}
+
+.SmallVideoAuthorName {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.SmallVideoAuthorHeading {
+    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}

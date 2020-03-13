@@ -1,0 +1,129 @@
+ /* ===== Select Box ===== */
+ 
+ .SortDiv {
+     align-items: center;
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .SortDiv h5 {
+     margin: 4px;
+     letter-spacing: 1.3px;
+     font-size: 16px;
+ }
+ 
+ .Sel {
+     padding: 0.3rem 0;
+     font-size: 1rem;
+     display: inline-block;
+     width: 30%;
+     position: relative;
+     cursor: pointer;
+     background-color: transparent;
+ }
+ 
+ .Sel::before {
+     position: absolute;
+     content: '\f063';
+     font-family: 'FontAwesome';
+     font-size: 2em;
+     color: #FFF;
+     right: 20px;
+     top: calc(50% - 0.5em);
+ }
+ 
+ .Sel.active::before {
+     transform: rotateX(-180deg);
+ }
+ 
+ .Sel__placeholder {
+     display: block;
+     font-family: 'Quicksand';
+     font-size: 2.3em;
+     color: #838e95;
+     padding: 0.2em 0.5em;
+     text-align: left;
+     pointer-events: none;
+     user-Select: none;
+     visibility: visible;
+ }
+ 
+ .Sel.active .Sel__placeholder {
+     visibility: hidden;
+ }
+ 
+ .Sel__placeholder::before {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding: 0.2em 0.5em;
+     content: attr(data-placeholder);
+     visibility: hidden;
+ }
+ 
+ .Sel.active .Sel__placeholder::before {
+     visibility: visible;
+ }
+ 
+ .Sel__box {
+     position: absolute;
+     top: calc(100% + 4px);
+     left: -4px;
+     display: none;
+     list-style-type: none;
+     text-align: left;
+     font-size: 1em;
+     background-color: #FFF;
+     width: calc(100% + 8px);
+     box-sizing: border-box;
+ }
+ 
+ .Sel.active .Sel__box {
+     display: block;
+     animation: fadeInUp 500ms;
+ }
+ 
+ .Sel__box__options {
+     display: list-item;
+     font-family: 'Quicksand';
+     font-size: 1.5em;
+     color: #838e95;
+     padding: 0.5em 1em;
+     user-Select: none;
+ }
+ 
+ .Sel__box__options::after {
+     content: '\f00c';
+     font-family: 'FontAwesome';
+     font-size: 0.5em;
+     margin-left: 5px;
+     display: none;
+ }
+ 
+ .Sel__box__options.selected::after {
+     display: inline;
+ }
+ 
+ .Sel__box__options:hover {
+     background-color: #ebedef;
+ }
+ /* ----- Select Box Black Panther ----- */
+ 
+ .Sel {
+     border-bottom: 4px solid rgb(0, 13, 255)
+ }
+ 
+ .Sel--black-panther {
+     z-index: 3;
+ }
+ 
+ @keyframes fadeOut {
+     from {
+         opacity: 1;
+     }
+     to {
+         opacity: 0;
+     }
+ }

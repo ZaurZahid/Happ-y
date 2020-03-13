@@ -1,0 +1,40 @@
+ .FooterNavigationItem {
+     display: flex;
+     font-family: 'Lemonada', cursive;
+     height: 98%;
+     width: 25%;
+     background: rgb(250, 250, 250);
+     color: rgb(50, 4, 255);
+     align-items: center;
+     justify-content: center;
+     /* border: 1px solid red; */
+ }
+ 
+ .FooterNavigationItem a {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 85%;
+     padding: 4px;
+     font-size: 1.8rem;
+     text-decoration: none;
+     transition: 0.5s all ease;
+     align-items: center;
+ }
+ 
+ .FooterNavigationItem a:hover,
+ .FooterNavigationItem a:active,
+ .FooterNavigationItem a.active {
+     background-color: #003cf7;
+     color: white;
+ }
+ 
+ .FooterNavigationItem a:hover i,
+ .FooterNavigationItem a:active i,
+ .FooterNavigationItem a.active i {
+     color: white;
+ }
+ 
+ .FooterNavigationItem a i {
+     color: rgb(50, 4, 255);
+ }

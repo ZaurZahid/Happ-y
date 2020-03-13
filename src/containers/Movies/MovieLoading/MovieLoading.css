@@ -1,0 +1,75 @@
+.SmallMovieLoading {
+    display: flex;
+    height: 7rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(114, 114, 114, 0.835);
+    background: linear-gradient(to right, transparent, #b3acae);
+    animation: move 5s infinite ease-in-out;
+    border-left: none;
+    cursor: pointer;
+}
+
+.SmallMovieLoading:not(:last-child) {
+    margin-bottom: 1.4rem;
+}
+
+.SmallMovieLoadingImg {
+    height: 100%;
+    width: 35%;
+    box-sizing: border-box;
+    border-left: 3px solid #647077;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    box-shadow: 1px 0px 3px 1px rgba(125, 118, 118, 0.68);
+}
+
+.SmallMovieLoadingBasics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+    width: 65%;
+}
+
+.SmallMovieLoadingName {
+    height: 1.3rem;
+    width: 9rem;
+    background: linear-gradient(to right, transparent, #b3acae);
+    animation: move 5s infinite ease-in-out;
+    margin: 0.5rem 0;
+}
+
+.Imdb {
+    display: flex;
+    align-items: center;
+}
+
+.Imdb i {
+    margin-right: 0.2rem;
+    color: #b3acae;
+}
+
+.ratingValue {
+    width: 4rem;
+    height: 1.3rem;
+    background: linear-gradient(to right, transparent, #b3acae);
+    animation: move 5s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        background-color: grey;
+    }
+    25% {
+        background-color: rgb(206, 194, 194);
+    }
+    50% {
+        background-color: grey;
+    }
+    75% {
+        background-color: rgb(206, 194, 194);
+    }
+    100% {
+        background-color: grey;
+    }
+}

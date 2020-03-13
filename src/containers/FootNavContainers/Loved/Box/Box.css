@@ -1,0 +1,46 @@
+.Box {
+    overflow: hidden;
+    border: 1px solid #003cf7;
+    margin-bottom: 1rem;
+    text-align: end;
+    border-radius: 0.2rem;
+}
+
+.Box button {
+    border-radius: 0.2rem;
+    text-align: justify;
+    background-color: #4808fc;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    margin: 0.3rem 0.8rem 0.4rem 0;
+    font-weight: bold;
+}
+
+.Box #All {
+    background-color: #fc0831e3;
+}
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    margin: 0.4rem 0 0.2rem;
+    height: 5.2rem;
+}
+
+.Open {
+    height: auto;
+}
+
+.ItemsHeader {
+    margin: 0.4rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Lemonada', cursive;
+    color: #d21414;
+}

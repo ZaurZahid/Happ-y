@@ -1,0 +1,75 @@
+.mainBox {
+    max-width: 95%;
+    margin-bottom: 22px;
+    min-height: 140px;
+    border: 2px solid blue;
+    /* min-width: 75px; */
+    width: 95%;
+    text-align: center;
+    box-sizing: border-box;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mainBox img {
+    object-fit: cover;
+    width: 100%;
+    height: 84%;
+}
+
+.mainBox:hover img {
+    transform: scale(1.1)
+}
+
+.mainBox:hover .HeadingContent {
+    height: 54px
+}
+
+.HeadingContent {
+    box-sizing: border-box;
+    bottom: 0;
+    background: red;
+    text-shadow: 1px 1px #080808;
+    line-height: 1.2;
+    position: absolute;
+    color: #fff610;
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    height: 44px;
+    padding: 3px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeadingContent span {
+    display: block
+}
+
+.ReadText {
+    transform: translateY(-110px);
+    z-index: -2;
+    display: none
+}
+
+.mainBox:hover .ReadText {
+    transform: translateY(0px);
+    z-index: 5;
+    display: block;
+    font-family: 'Lemonada', cursive;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(68, 61, 61, 0.657);
+    color: white;
+    height: 64%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
